@@ -1,0 +1,14 @@
+
+services:
+  volume_backupper:
+    image: dosisido/volume_backupper:latest
+    build: .
+    container_name: volume_backupper
+    restart: unless-stopped
+    volumes:
+      - ./backups:/backups:rw
+      - ./data:/data:ro
+    environment:
+      - PERIOD_CRON_SYNTAX=*/1 * * * *
+      - SKIP_ZIP_PATHS="[ignore_this, ignore_this2]"
+      - RETENTION=3
