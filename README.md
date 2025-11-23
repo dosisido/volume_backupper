@@ -71,5 +71,6 @@ docker run -d --name volume_backupper \
 
 
 ### Contributing
-Issues and pull requests are welcome. If you want a feature (e.g., S3 upload, encryption), open an issue describing the desired behavior.
+Issues and pull requests are welcome. If something does not work as expected, open an issue on github describing the desired behavior.
 
+[Github Repository](https://github.com/dosisido/volume_backupper)
